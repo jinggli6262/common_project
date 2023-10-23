@@ -5,7 +5,22 @@ h1{
     font-size: 500%;
     font-family: 'Times New Roman', Times, serif;
     text-align: center; 
+    animation: 3s linear 1s slidein;
+    
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 h2{
     font-size:300%;
     color:rgb(26, 18, 77);
@@ -102,21 +117,11 @@ a[href='#main']:focus {
     h1 {
         font-size: 400%;
         grid-column: 1/span 3;
-        animation: 3s linear 1s slidein;
+
     }
 
-    @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 300%;
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-      }
-
+   
+    
     img.one {
         border: black solid 2px;
         grid-column: 2;
@@ -207,7 +212,8 @@ a[href='#main']:focus {
         padding-left: 10px;
     } */ */ */
     
-}
+
+
 
 @media (prefers-reduced-motion: reduce) {
     .gif{
