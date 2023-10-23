@@ -1,1 +1,1 @@
-# common_project
+# mobile_view
